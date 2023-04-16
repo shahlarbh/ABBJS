@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header .firstrow {
+  padding: 1.5rem 3rem;
+  display: flex;
+  justify-content: space-between;
+  background-color: #F0F2F5;
+}
+header .firstrow .left nav a {
+  text-decoration: none;
+  margin-right: 1rem;
+  font-size: 16px;
+  color: #666666;
+}
+header .firstrow .left nav a:hover {
+  border-bottom: 1px solid #666666;
+}
+header .firstrow .left nav .different {
+  color: #0056C1;
+  border: 1px solid #0056C1;
+  border-radius: 20px;
+  padding: 8px 10px;
+  font-weight: 500;
+  font-size: 16px;
+  transition: 0.5s;
+}
+header .firstrow .left nav .different:hover {
+  background-color: #0056C1;
+  color: white;
+}
+header .firstrow .right .search p {
+  font-size: 16px;
+  color: #666666;
+  cursor: pointer;
+}
+header .firstrow .right .search p span {
+  margin-left: 0.5rem;
+}
+header .firstrow .right .lang {
+  font-size: 16px;
+  color: #666666;
+  margin-left: 1rem;
+  cursor: pointer;
+}
+header .firstrow .right .lang .hiddenlang {
+  width: 10%;
+  font-size: 16px;
+  position: absolute;
+  top: 11.5%;
+  left: 82%;
+  z-index: 1;
+  background-color: white;
+  box-shadow: 0px 0px 1px 0px black;
+}
+header .firstrow .right .lang .hiddenlang a {
+  display: block;
+  text-decoration: none;
+  color: #262626;
+  padding: 14px;
+  transition: 0.5s;
+}
+header .firstrow .right .lang .hiddenlang a:hover {
+  background-color: whitesmoke;
+}
+header .firstrow .right .lang .hiddenlang a .flag {
+  margin: 0 10px 0 5px;
+  padding: 2px 14px;
+}
+header .firstrow .right .lang .hiddenlang a #aze {
+  background-image: url(/assets/image/flag-az.svg);
+}
+header .firstrow .right .lang .hiddenlang a #uk {
+  background-image: url(/assets/image/flag-uk.svg);
+}
+header .firstrow .right .lang .hiddenlang a #rus {
+  background-image: url(/assets/image/flag-ru.svg);
+}
+header .firstrow .right .lang i {
+  transition: 0.5s;
+}
+header .firstrow .right .mobile {
+  font-size: 16px;
+  color: #666666;
+  margin-left: 1rem;
+  cursor: pointer;
+}
+header .firstrow .right .mobile a {
+  text-decoration: none;
+  color: #666666;
+}
+
+.searchpanel {
+  position: relative;
+}
+.searchpanel input {
+  padding: 1rem 3rem;
+  width: 100%;
+  font-size: 36px;
+  border: none;
+  outline-style: none;
+}
+.searchpanel i {
+  font-size: 36px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 95%;
+  cursor: pointer;
+}
+
+.display {
+  display: block !important;
+}
+
+.rotate {
+  transform: rotate(-180deg);
+}
+
+@media (max-width: 576px) {
+  header .firstrow {
+    padding: 1.5rem 1rem;
+  }
+  header .firstrow .left .panel {
+    display: block !important;
+  }
+  header .firstrow .left .panel a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #262626;
+    font-weight: 600;
+  }
+  header .firstrow .left .panel a i {
+    font-size: 14px;
+    transition: 0.5s;
+  }
+  header .firstrow .left .panel .hiddenpanel {
+    position: absolute;
+    top: 11.5%;
+    left: 1%;
+    box-shadow: 0px 0px 1px 0px black;
+    z-index: 1;
+    background-color: white;
+  }
+  header .firstrow .left .panel .hiddenpanel a {
+    display: block;
+    padding: 10px 25px;
+    transition: 0.5s;
+  }
+  header .firstrow .left .panel .hiddenpanel a:hover {
+    background-color: whitesmoke;
+  }
+  header .firstrow .left nav {
+    display: none;
+  }
+  header .firstrow .right .search p span {
+    display: none;
+  }
+  header .firstrow .right .lang .hiddenlang {
+    width: 25%;
+    top: 11.5%;
+    left: 60%;
+  }
+  .searchpanel input {
+    padding: 1rem;
+    font-size: 28px;
+  }
+  .searchpanel i {
+    left: 93%;
+    font-size: 28px;
+  }
+}/*# sourceMappingURL=style.css.map */
